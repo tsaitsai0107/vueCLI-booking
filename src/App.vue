@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Step1></Step1>
+  <step2></step2>
+  <step3></step3>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Step1 from "./components/step1";
+import step2 from "./components/step2";
+import step3 from "./components/step3";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Step1,
+    step2,
+    step3,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+button {
+  margin: 10px 0;
 }
 </style>
